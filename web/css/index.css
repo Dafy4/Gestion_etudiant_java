@@ -1,0 +1,96 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30 juil. 2023, 08:54:49
+    Author     : ORDI
+*/
+body{
+    /*background-color: #120B4D;*/
+    background-image: url("assets/Bg2.png");
+}
+.image{
+    width:50%;
+    
+}
+img{
+    position:absolute;
+    left:0px;
+    top:30px;
+   width: 600px;
+   height: 550px;
+}
+.authentification{
+    position: absolute;
+    top: 50px;
+    left:800px;
+    right:10px;
+    background-color: #0f020249;
+    border: 1px solid #0f020249;
+    border-radius:20px; 
+    width:401px;
+    height: 500px;
+    text-align:center;
+    color: #f1f1f1;
+}
+h1{
+    text-align:center;
+    color:#0400ff;
+    text-shadow: 2px 2px 5px rgb(0, 204, 255);
+    letter-spacing: 3px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+div{
+    padding: 10px;
+}
+input[type="submit"], input[type="reset"]{
+    width:150px;
+    border:1px;
+    border-radius: 4px;
+    padding: 10px;
+}
+input[type="submit"]{
+    background-color:#209900 ;
+    color:#ffff;
+}
+input[type="submit"]:hover{
+    cursor:pointer;
+    background-color: #ffff;
+    color:#209900;
+    border:1px solid #209900;
+}
+input[type="reset"]{
+    background-color:#D50022 ;
+    color:#ffff;
+}
+input[type="reset"]:hover{
+    cursor:pointer;
+    background-color:#ffff ;
+    color:#D50022;
+    border:1px solid #D50022;
+}
+input[type="text"], input[type="password"], select{
+    width:100%;
+    padding:8px;
+    border:none;
+}
+select{
+   background-color: #f1f1f1;
+}
+select:focus{
+    box-shadow: 5px 5px 5px #00ABFF;
+    outline: none;
+}
+input[type="text"], input[type="password"]{
+    border-bottom: 2px solid  #303030;
+    outline: none;
+}
+input[type="password"]:focus{
+     background-color: #f1f1f1;
+}
+input[type="text"]:focus{
+    background-color: #f1f1f1;
+}
+
