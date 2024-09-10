@@ -1,6 +1,6 @@
 <%-- 
-    Document   : consulter
-    Created on : 29 août 2023, 15:42:42
+    Document   : footerAdmin
+    Created on : 23 Mai 2024, 10:03:00
     Author     : ORDI
 --%>
 

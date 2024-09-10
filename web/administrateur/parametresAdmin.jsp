@@ -1,6 +1,6 @@
 <%-- 
-    Document   : parametres
-    Created on : 29 août 2023, 22:03:39
+    Document   : footerAdmin
+    Created on : 23 Mai 2024, 10:07:50
     Author     : ORDI
 --%>
 

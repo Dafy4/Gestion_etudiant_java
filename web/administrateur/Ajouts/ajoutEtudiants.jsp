@@ -1,4 +1,4 @@
-<%-- 
+<%--
     Document   : ajoutEtudiants
     Created on : 1 sept. 2023, 09:19:24
     Author     : ORDI
@@ -11,6 +11,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%
         InsertionDao liste = new InsertionDao();
+        
         List<GradeModele> grades = new ArrayList<GradeModele>();
         
         grades = liste.findGrade();
@@ -25,8 +26,11 @@
         int effectifs = 0;
         for(GradeModele listeGrade : grades)
         {
-            effectifs = listeGrade.getEffectifs();
+                        
+            effectifs = listeGrade.getEffectifs();            
             int placesReste = effectifs - (liste.Inscrits(listeGrade.getGrade()));
+            out.println(placesReste);
+            
             out.println("<button class='grade' id='gradeSelect"+i+"' onclick=Redirection("+i+")>"+ listeGrade.getGrade() +" </button>"+"Place restantes : "+ placesReste+"");
             
             //out.print("<h5> Place restantes :"+placesReste+"  </h5>");          
@@ -97,14 +101,14 @@
                        <input type="text" name="grade" id="gradeForm" value="grade" readonly >
                        <input type="text" name="anne_scolaire" id="anne_scolaire" value="grade">
                 </div>
-            <%  
+            <!--%  
                 String grade = request.getParameter("grade");
                 if(grade != null)
                 {
                     int placesReste = effectifs - (liste.Inscrits(grade));
                 out.print("<h1> Place restantes :"+placesReste+" </h1>"); 
                 }
-            %>
+            %-->
                 <div>
                     <label for="Num_matr"> Numero matricule </label>
                     <input type="text" name="num_matr" id="Num_matr" placeholder="@01">

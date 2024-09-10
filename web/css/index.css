@@ -10,6 +10,8 @@ and open the template in the editor.
 body{
     /*background-color: #120B4D;*/
     background-image: url("assets/Bg2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .image{
     width:50%;
@@ -24,23 +26,31 @@ img{
 }
 .authentification{
     position: absolute;
-    top: 50px;
-    left:800px;
-    right:10px;
-    background-color: #0f020249;
-    border: 1px solid #0f020249;
-    border-radius:20px; 
-    width:401px;
-    height: 500px;
-    text-align:center;
-    color: #f1f1f1;
+    top: 42px;
+    left: 800px;
+    right: 92px;
+    width: 430px;
+    height: 394px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff40;
+    border-radius: 10px;
+    backdrop-filter: blur(70px);
+    box-shadow: 5px 6px 20px 8px rgb(95 95 95 / 22%);
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 h1{
-    text-align:center;
+    /* text-align:center;
     color:#0400ff;
     text-shadow: 2px 2px 5px rgb(0, 204, 255);
     letter-spacing: 3px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif; */
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 4px 2px #1f84f8;
+    font-family: Copperplate, Papyrus, fantasyt;
 }
 div{
     padding: 10px;
@@ -52,14 +62,17 @@ input[type="submit"], input[type="reset"]{
     padding: 10px;
 }
 input[type="submit"]{
-    background-color:#209900 ;
-    color:#ffff;
+    /* background-color:#209900 ;
+    color:#ffff; */
+    background: linear-gradient(to right, #ff3100, #142983);
+    color: #fff;
 }
 input[type="submit"]:hover{
     cursor:pointer;
-    background-color: #ffff;
-    color:#209900;
-    border:1px solid #209900;
+    transition: 0.5s;
+    background:  linear-gradient(to right, #ffffff, #ffffff);
+    color:#142983;
+    border:1px solid #ffff;
 }
 input[type="reset"]{
     background-color:#D50022 ;
@@ -67,6 +80,7 @@ input[type="reset"]{
 }
 input[type="reset"]:hover{
     cursor:pointer;
+    transition: 0.5s;
     background-color:#ffff ;
     color:#D50022;
     border:1px solid #D50022;
@@ -75,6 +89,7 @@ input[type="text"], input[type="password"], select{
     width:100%;
     padding:8px;
     border:none;
+    
 }
 select{
    background-color: #f1f1f1;
@@ -84,8 +99,11 @@ select:focus{
     outline: none;
 }
 input[type="text"], input[type="password"]{
-    border-bottom: 2px solid  #303030;
+    /* border-bottom: 2px solid  #303030; */
     outline: none;
+    outline: none;
+    background-color: #0f020200;
+    border-bottom: 1px solid #fff;
 }
 input[type="password"]:focus{
      background-color: #f1f1f1;

@@ -1,11 +1,11 @@
 <%-- 
     Document   : footerAdmin
-    Created on : 29 août 2023, 14:35:02
+    Created on : 23 Mai 2024, 10:01:40
     Author     : ORDI
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
-    <footer> © by ANDRIAMAHARIVONISOA Aina Dafy Ange GL L2 </footer>
+    <!--footer> © by ANDRIAMAHARIVONISOA Aina Dafy Ange GL L2 </footer-->
    </body> 
 </html>
